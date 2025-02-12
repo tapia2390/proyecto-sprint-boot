@@ -24,9 +24,14 @@ public class personaController {
         pdb.setName(p.getName());
         pdb.setEdad(p.getEdad());
 
-
-
         return pdb;
+    }
+
+
+    @DeleteMapping("/{id}")
+    public String deletePersona (@PathVariable Integer id){
+
+        return "Persona con id: "+ id+" Eliminada";
     }
 }
 
