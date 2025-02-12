@@ -11,5 +11,22 @@ public class personaController {
         System.out.println(p.getName());
         return "Persona creada...";
     }
+
+@PutMapping("/actualizar")
+    public Persona actualizarPersona (@RequestBody Persona p){
+
+        Persona pdb = new Persona();
+        pdb.setId(1);
+        pdb.setName("Maria");
+        pdb.setEdad(23);
+
+        pdb.setId(p.getId());
+        pdb.setName(p.getName());
+        pdb.setEdad(p.getEdad());
+
+
+
+        return pdb;
+    }
 }
 
