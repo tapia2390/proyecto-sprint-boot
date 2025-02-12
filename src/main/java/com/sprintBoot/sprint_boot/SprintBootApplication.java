@@ -12,7 +12,7 @@ public class SprintBootApplication {
 
 		SpringApplication.run(SprintBootApplication.class, args);
 
-		BancaWeb bw = new BancaWeb();
+		BancaWeb bw = new BancaWeb(new Pago());
 		bw.realizarTransferencia();
 	}
 

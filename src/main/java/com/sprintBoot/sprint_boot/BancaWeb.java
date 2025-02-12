@@ -1,15 +1,15 @@
 package com.sprintBoot.sprint_boot;
 
 class BancaWeb {
-    private  TransferenciaBancaria tb;
+    private  Transferencia it;
 
-    public  BancaWeb(){
-        tb = new TransferenciaBancaria();
+    public  BancaWeb(Transferencia t){
+        this.it = t;
 
     }
 
     public void realizarTransferencia(){
-        tb.transferir();
+        it.transferir();
     }
 
 }

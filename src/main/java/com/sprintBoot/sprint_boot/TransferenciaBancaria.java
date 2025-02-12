@@ -1,10 +1,13 @@
 package com.sprintBoot.sprint_boot;
 
-class TransferenciaBancaria{
+class TransferenciaBancaria implements  Transferencia{
 
     public  TransferenciaBancaria(){}
 
-    public void transferir(){
+    @Override
+    public void transferir() {
         System.out.println("Transfiriendo....");
     }
+
+
 }
